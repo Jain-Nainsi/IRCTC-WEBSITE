@@ -1,0 +1,167 @@
+body{
+	background-image: url(../images/IRCTC-Special-Trains.jpg);
+	background-size:cover;
+}
+nav{
+	display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+    background-image: url(../images/img.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 20px;
+}
+nav .logo{
+    padding: 17px 100px;
+	font-size: 24px;
+	font-weight: 800;
+	color: rgb(17, 55, 224);
+}
+nav ul{
+	list-style: none;
+	margin:0;
+	margin-left: 600px;
+}
+nav ul li a{
+    line-height: 60px;
+	color: rgb(17, 55, 224);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+ul li a:hover{
+	background: rgb(193, 195, 206);
+}
+.outer_container{
+    margin: 10px 80px;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    width:900px;
+    margin: auto;
+    margin-top:76px;
+}
+p{
+    color:rgb(253, 56, 56);
+}
+#contain1{
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px rgb(205, 201, 201);
+    background-color: white;
+    display: block;
+    margin: auto;
+   margin-bottom: 10px;
+    width:60vw;
+    padding: 30px 70px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+#svg{
+    float: right;
+    position: absolute;
+    top:10px;
+    right:20px;
+    color: hsl(240, 80%, 31%);
+   
+}
+#contain1 a{
+    float: right;
+    color: #fb792b;
+    font-size: 15px;
+    font-weight: 500;
+}
+.Details{
+    background-color:white;
+    font-weight: 600;
+    padding: 0px 35px;
+    font-size:20px;
+    margin: 12px;
+    border: 0;
+    border-bottom:1px solid gray;
+}
+
+.Details:hover{
+    border:1px solid gray;
+    border-radius: 3px;
+}
+.Details:focus{
+    border-bottom:3px solid rgb(229, 33, 33);
+    border-radius: 3px;
+}
+#form1 input{
+    width:100%;
+}
+::placeholder{
+    color:hsl(240, 80%, 31%);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+}
+.btn-c{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding:10px 40px;
+    margin-top: 20px;
+}
+.btn-continue,.btn-register{
+    background-color:#fb792b;
+    color: white;
+    border-radius: 5px;
+    border-color:#fb792b;
+    float: right;
+    padding:4px 30px;
+    margin-top: 20px;
+}
+#form2,#form3{
+    display:none;
+    padding: 20px 0px;
+}
+#name input{
+    width:100%;
+}
+.status{
+    padding: 4px;
+}
+#name2 input{
+width:95%;
+}
+.status{
+    color:hsl(240, 80%, 31%);
+}
+@media only screen and (max-width:1200px) {
+    .Details{
+        padding:3px 15px;
+        margin: 5px;
+        font-size: 18px;
+    }
+    #contain1{
+        width:80vw;
+        padding: 10px 30px;
+    }
+   #name input{
+    width:100%;
+   }
+}
+
+@media only screen and (max-width:700px) {
+    .Details{
+        padding:2px 10px;
+        margin: 0;
+        font-size:15px;
+    }
+    #form2 input{
+       
+        margin-right: 9px;
+        margin-top: 10px;
+        }
+    #name input{
+        width:100%;       
+    }
+}
+
+

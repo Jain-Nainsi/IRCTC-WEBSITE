@@ -1,0 +1,38 @@
+.container
+{
+    height: auto;
+    width:650px;
+    background:white;
+    box-shadow:2px 2px 3px rgba(0,0,0,7),-2px -2px 3px #b9b8ba33;
+    margin:auto;
+    padding: 10px;
+}
+.div1{
+    border: 1px solid grey;
+}
+.div1 span{
+    padding-left: 10px;
+}
+.div2{
+    border: 1px solid grey;
+    color:darkblue;
+    background-color: #d3d3d36d;
+    margin:10px 20px;
+}
+.fare1{
+    width:100%;
+}
+.div10 span{
+    padding:10px 30px;
+}
+button{
+    width:100px;
+    color: white;
+    background-color: red;
+    border: 0px solid ;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: -25px;
+    font-weight: bolder;
+    float: right;
+}

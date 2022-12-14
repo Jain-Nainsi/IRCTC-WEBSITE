@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRCTC | TICKET BOOKING</title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="bootstrap" href="bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bf3ad31945.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">IRCTC</div>
+      <ul>
+        
+        <li><a href="../HTML/index.html" class="login">LOGOUT</a></li>
+      </ul>
+    </nav>
+
+    <div id="table">
+      <h1 class="table1" style="text-align:center">No Train Available</h1>
+      <span class="table2">
+      <div id="first" class="Table" style="background-color: darkgrey;">
+        <h3 style="margin: 0" id="trainName">Rajdhani Express</h3>
+        <p style="margin: 0" id="runOn">Runs On: M T W T F S S</p>
+        <h3 style="margin: 0" id="trainschedule"></h3>
+      </div>
+
+      <div id="second" class="Table">
+        <h5 id="trainName">
+          <span class="depart_time">3:00</span> | <span class="From"></span> |
+          <span style="margin: 0" class="Date"></span>
+        </h5>
+        
+        <h5 id="trainScedule">
+          <span class="arrival_time">11:00</span>| <span class="To"></span> |
+          <span style="margin: 0" class="Date"></span>
+        </h5>
+      </div>
+
+      <div id="third">
+        <button class="availableButton" id="button1Pressed">
+          <p style="font-weight: bold; margin: 0">AC Chair Car(AC)</p>
+          <p style="margin: 0; color: green">Available-<span class="ac">2101</span></p>
+          <p class="price"><span class="p_ac">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+        <button class="availableButton" id="button2Pressed">
+          <p style="font-weight: bold; margin: 0">AC 1st Class(1AC)</p>
+          <p style="margin: 0; color: green">Available-<span class="ac1">2101</span></p>
+          <p class="price"><span class="p_ac1">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+        <button class="availableButton" id="button3Pressed">
+          <p style="font-weight: bold; margin: 0">AC 2nd Class(2AC)</p>
+          <p style="margin: 0; color: green">Available-<span class="ac2">2101</span></p>
+          <p class="price"><span class="p_ac2">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+        <button class="availableButton" id="button4Pressed">
+          <p style="font-weight: bold; margin: 0">AC 3rd Class(3AC)</p>
+          <p style="margin: 0; color: green">Available-<span class="ac3">2101</span></p>
+          <p class="price"><span class="p_ac3">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+        <button class="availableButton" id="button5Pressed">
+          <p style="font-weight: bold; margin: 0">Sleeper Class(SL)</p>
+          <p style="margin: 0; color: green">Available-<span class="sl">2101</span></p>
+          <p class="price"><span class="p_sl">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+        <button class="availableButton" id="button6Pressed">
+          <p style="font-weight: bold; margin: 0">Second Class(2S)</p>
+          <p style="margin: 0; color: green">Available-<span class="SS">2101</span></p>
+          <p class="price"><span class="p_SS">&#8377 837</span><span class="refresh"><i class="fa-solid fa-rotate-right"></i>Refresh</span></p>
+        </button>
+      </div>
+
+      <div id="fourth">
+        <button
+          style="background-color: lightsalmon"
+          class="button"
+          id="booknowbutton"
+        >
+          <h5 style="font-weight: bolder"><a href="" style="text-decoration:none;" id="bn">BOOK NOW</a></h5>
+        </button>
+      </span>
+      </div>
+    </div>
+    
+    <script src="../JS/table.js"></script>
+
+    <footer>
+      <p>&copy; Copyright 2022: IRCTC</p>
+    </footer>
+  </body>
+</html>

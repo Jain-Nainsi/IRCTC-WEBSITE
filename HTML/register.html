@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRCTC | TICKET BOOKING</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">IRCTC</div>
+    <ul>
+      <li><a href="../HTML/index.html" class="home">HOME</a></li>
+    </ul>
+  </nav>
+  <div class="outer_container">
+    <a href="" id="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg>
+    </a>
+    <pre> </pre>
+    <div class="" id="contain1">
+      <b style="font-size:20px;font-weight: 600;">Create Your Account</b>
+      <a href="../HTML/login.html">SIGN IN</a>
+      <div class="mt-3">
+        <button type="button" class="Details" onclick="Basic()">Basic Details</button>
+        <button type="button" class="Details" onclick="next1()">Personal Details</button>
+        <button type="button" class="Details" onclick="Next21()">Address </button>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 mt-3" id="form">
+          <form action="" id="form" method="post" onsubmit="event.preventDefault();">
+            <div id="form1">
+              <input type="text" id="username" placeholder="User Name" onclick="alpha()" onkeyup="alpha()"
+                autocomplete="off">
+              <p id="nm"></p>
+              <input type="password" placeholder="Password" id="password" onclick="pass()" onkeyup="pass()">
+              <p id="pass"></p>
+              <input type="password" id="cpassword" placeholder="Confirm Password" onclick="pass1()" onkeyup="pass1()">
+              <p id="pass1"></p>
+              <input id="question" name="ques" type="text" list="queslist" placeholder="Security Questions" autocomplete="off"
+                onkeyup="que()">
+              <datalist id="queslist">
+                <option value="What is your pet name ?">
+                <option value="What was your first school name ?">
+                <option value="What is your favourite food ?">
+              </datalist>
+              <p id="ques"></p>
+              <input type="text" placeholder="Security Answer" id="answer" onclick="validateans()" autocomplete="off"
+                onkeyup="validateans()">
+              <p id="ans"></p>
+              <button type="button" class="btn-c ">Cancel</button>
+              <button type="button" class="btn-continue" onclick="next1()" >Continue<svg xmlns="http://www.w3.org/2000/svg"
+                  width="40" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg></button>
+            </div>
+            <div id="form2">
+              <div class="row" id="name">
+                <div class="col ">
+                  <input type="text" placeholder="First Name" id="fname" onclick="fn()" onkeyup="fn()" autocomplete="off">
+                  <p id="fn"></p>
+                </div>
+                <div class="col ">
+                  <input type="text" placeholder="Middle Name" id="mname" onkeyup="mn()" autocomplete="off">
+                  <p id="mn"></p>
+                </div>
+                <div class="col-4 ">
+                  <input type="text" placeholder="Last Name" id="lname" onclick="ln()" onkeyup="ln()" autocomplete="off">
+                  <p id="ln"></p>
+                </div>
+      
+              </div>
+              <div class="row" id="name">
+                <div class=" col">
+                  <input id="occ" name="occ" type="text" list="occlist" placeholder="Select Occupations" onkeyup="occu()" autocomplete="off">
+                  <datalist id="occlist">
+                    <option value="Government">
+                    <option value="Public">
+                    <option value="Private">
+                    <option value="student">
+                  </datalist>
+                  <p id="o"></p>
+                </div>
+                <div class="col">
+                  <input type="email" placeholder="Email" id="mail" onclick="em()" onkeyup="em()" autocomplete="off">
+                  <p id="m"></p>
+                </div>
+              </div>
+      
+              <input id="gen" name="gender" type="text" list="genderlist" placeholder="Gender" onkeyup="gend()"
+                style="width:48%" autocomplete="off">
+              <datalist id="genderlist">
+                <option value="Male">
+                <option value="Female">
+                <option value="Other">
+              </datalist>
+      
+              <span style="margin:0px 30px;">
+                <input type="radio" id="married" name="status" value="married">
+                <label for="married" class="status">Married</label>
+                <input type="radio" id="unmaaried" name="status" value="unmaaried">
+                <label for="unmaaried" class="status">Unmarried</label>
+              </span>
+              <p id="g"></p>
+              <div class="row " id="name">
+                <div class="col">
+                  <input type="tel" placeholder="Mobile Number" id="mob" onclick="vmob()" onkeyup="vmob()" autocomplete="off">
+                  <p id="mb"></p>
+                </div>
+      
+                <div class="col ">
+                  <input type="date" placeholder="Date Of Birth" id="dob" name="dob" onkeyup="dateob()">
+                  <p id="db"></p>
+                  <script type="text/javascript">
+                    $(function(){
+                        var dtToday = new Date();
+                                    var month = dtToday.getMonth()+1;
+                                    var day = dtToday.getDate();
+                                    var year = dtToday.getFullYear();
+                                    if(month < 10)
+                                        month = '0' + month.toString();
+                                    if(day < 10)
+                                        day = '0' + day.toString();
+                                    var maxDate = year + '-' + month + '-' + day;
+                                    $('#dob').attr('max', maxDate);
+                                });
+                </script>
+                </div>
+              </div>
+              <br>
+              <button type="button" class="btn-c" onclick="Basic()">Back</button>
+              <button type="button" class="btn-continue" onclick="Next21()" >Continue<svg xmlns="http://www.w3.org/2000/svg"
+                width="40" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+              </svg></button>
+            </div>
+            <div id="form3">
+              <div class="row justify-content-space-between" id="name2">
+                <div class="col">
+                  <input type="text" id="add1" placeholder="Address Line1" onclick="add()" onkeyup="add()" autocomplete="off">
+                  <p id="a1"></p>
+                </div>
+                <div class="col">
+                  <input type="text" id="add2" placeholder="Address Line2" onclick="ad()" onkeyup="ad()" autocomplete="off">
+                  <p id="a2"></p>
+                </div>
+              </div>
+              <div class="row justify-content-evenly" id="name2">
+                <div class="col">
+                  <input type="text" id="count" placeholder="Country" onclick="validatecount()" onkeyup="validatecount()"
+                    autocomplete="off">
+                  <p id="cnt"></p>
+                </div>
+                <div class="col">
+                  <input type="text" id="pin" placeholder="Pincode" onclick="pinc()" onkeyup="pinc()" autocomplete="off">
+                  <p id="pn"></p>
+                </div>
+              </div>
+              <div class="row justify-content-evenly" id="name2">
+                <div class="col">
+                  <input list="states" id="state" placeholder="State" onkeyup="stat()">
+                  <datalist id="states">
+                    <option value="Andhra Pradesh">
+                    <option value="Uttar Pradesh">
+                    <option value="Uttarakhand">
+                    <option value="Madhya Pradesh">
+                    <option value="Maharashtra">
+                    <option value="Tamil Nadu">
+                  </datalist>
+                  <p id="st"></p>
+                </div>
+                <div class="col">
+                  <input list="cities" id="city" placeholder="City" onkeyup="cit()">
+                  <datalist id="cities">
+                    <option value="Delhi">
+                    <option value="Mumbai">
+                    <option value="Chandigarh">
+                    <option value="Bangalore">
+                    <option value="Chennai">
+                    <option value="Hyderabad">
+                    <option value="Pune">
+                    <option value="Jaipur">
+                    <option value="Lucknow">
+                    <option value="Dehradun">
+                  </datalist>
+                  <p id="ct"></p>
+                </div>
+              </div>
+              <button type="button" id="Back1" onclick="Personal()" class="btn-c">Back</button>
+              <button type="submit" id="Next2" class="btn-register" onclick="return register()" onsubmit="event.preventDefault();">REGISTER</button>
+      
+            </div>
+          </form>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <script src="../JS/register.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
